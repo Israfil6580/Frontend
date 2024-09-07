@@ -1,0 +1,14 @@
+/* Red Hat Display Font Family */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300..900&display=swap");
+/* Manrope Font Family */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
