@@ -5,7 +5,7 @@ import Features from "./Pages/Features";
 import HowItsWork from "./Pages/HowItsWork";
 import Navbar from "./Pages/Navbar";
 
-const root = () => {
+const Root = () => {
   return (
     <div className="bg-black">
       <Navbar />
@@ -18,4 +18,4 @@ const root = () => {
   );
 };
 
-export default root;
+export default Root;
