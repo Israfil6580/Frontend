@@ -4,9 +4,9 @@ const TransparentButton = ({ text, icon }) => {
   return (
     <button
       type="button"
-      className="flex justify-center border border-semi-transparent-white items-center gap-[10px] lg:py-4 py-3 lg:px-9 px-6 rounded-[78px] bg-light-transparent-white text-white"
+      className="flex justify-center items-center gap-2 lg:py-4 py-3 lg:px-9 px-6 rounded-full border border-semi-transparent-white bg-light-transparent-white text-white hover:bg-light-transparent-white-forhover transition-all duration-300"
     >
-      <span className="text-lg lg:text-xl font-normal leading-[30px] tracking-wide">
+      <span className="text-lg lg:text-xl font-normal leading-8 tracking-wide">
         {text}
       </span>
       {icon && <img src={icon} alt="" className="w-6 h-6" />}

@@ -9,6 +9,7 @@ export default {
       },
       backgroundColor: {
         "light-transparent-white": "rgba(255, 255, 255, 0.05)",
+        "light-transparent-white-forhover": "rgba(255, 255, 255, 0.10)",
         "custom-blue": "#0FC9F8",
         "footer-bg": "#09090A",
         "custome-deep-blue": "#0E47AE",

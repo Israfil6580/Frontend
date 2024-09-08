@@ -34,7 +34,7 @@ const Footer = () => {
             </div>
             <div className="flex lg:flex-row flex-col gap-4">
               <input
-                id="email"
+                name="SubscriptionEmail"
                 type="email"
                 placeholder="Enter your email"
                 className="w-full py-[18px] px-6 rounded-custom outline-none text-white bg-white/5 border border-white/10"
@@ -43,6 +43,7 @@ const Footer = () => {
             </div>
             <div className="flex gap-2 lg:items-center items-start">
               <input
+                name="termsandcondition"
                 type="checkbox"
                 className="w-5 h-5 text-blue-600 mt-[2px]"
               />
