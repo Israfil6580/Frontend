@@ -19,7 +19,7 @@ export default {
       borderRadius: {
         custom: "110px",
         customGradient: "658px",
-        smallGradient: "332px",
+        smallGradient: "300px",
       },
       borderColor: {
         "semi-transparent-white": "rgba(255, 255, 255, 0.12)",
@@ -35,7 +35,7 @@ export default {
       },
       width: {
         custom: "658px",
-        smallGradient: "332px",
+        smallGradient: "300px",
       },
       height: {
         custom: "658px",

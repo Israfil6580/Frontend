@@ -4,7 +4,7 @@ const DefaultButton = ({ text, icon }) => {
   return (
     <button
       type="button"
-      className="flex justify-center items-center gap-[10px] py-4 px-8 rounded-[78px] bg-gradient-to-r from-[#1692DC] to-[#231DDF] text-white"
+      className="flex justify-center items-center gap-[10px] py-4 px-9 rounded-[78px] bg-gradient-to-r from-[#1692DC] to-[#231DDF] text-white"
     >
       <span className="text-xl font-semibold leading-[30px] tracking-wide">
         {text}

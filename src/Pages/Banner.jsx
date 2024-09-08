@@ -22,8 +22,8 @@ const Banner = () => {
             <div className=" absolute top-20 right-80 w-custom h-custom flex-shrink-0 rounded-customGradient opacity-80 bg-custome-deep-blue blur-custom"></div>
           </div>
           <div>
-            {/* <div className="absolute bottom-20 right-96 w-smallGradient h-smallGradient flex-shrink-0 rounded-smallGradient opacity-70 bg-[#0FC9F8] blur-custom"></div> */}
-            <div className="absolute bottom-20 right-96 w-smallGradient h-smallGradient flex-shrink-0 rounded-smallGradient opacity-70 bg-[#C3F3FF] blur-custom"></div>
+            <div className="absolute bottom-20 right-[40rem] w-smallGradient h-smallGradient flex-shrink-0 rounded-smallGradient opacity-70 bg-[#0FC9F8] blur-custom"></div>
+            <div className="absolute bottom-0 right-[28rem] w-smallGradient h-smallGradient flex-shrink-0 rounded-smallGradient opacity-70 bg-[#C3F3FF] blur-custom"></div>
           </div>
         </div>
       </div>

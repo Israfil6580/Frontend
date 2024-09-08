@@ -59,7 +59,7 @@ const HowItsWork = () => {
       </div>
       {/* third step */}
       <div className="flex gap-40 lg:pt-[131px]">
-        <div className="flex flex-col">
+        <div className="flex flex-col gap-4">
           <p className="text-[22px] font-bold leading-[33.6px]">
             Hassle-Free Application
           </p>
@@ -69,7 +69,7 @@ const HowItsWork = () => {
           </p>
           <img className="object-cover" src={account} alt="" />
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col gap-4">
           <p className="text-[22px] font-bold leading-[33.6px]">
             Apply in Minutes
           </p>

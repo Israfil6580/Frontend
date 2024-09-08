@@ -8,7 +8,7 @@ const Faq = () => {
     setActiveIndex(activeIndex === index ? -1 : index);
   };
   return (
-    <div className="container mx-auto text-white">
+    <div className="container mx-auto text-white pb-48">
       <div className="flex flex-col gap-6 items-center">
         <Highlight text={"Quick Answers"} icon={quickAnswerIcon} />
         <h1 className="text-[60px] font-black leading-[78px]">
