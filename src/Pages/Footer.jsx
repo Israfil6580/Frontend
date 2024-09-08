@@ -10,27 +10,29 @@ import linkedin from "../assets/icon/linkedin.png";
 import discord from "../assets/icon/discord.png";
 const Footer = () => {
   return (
-    <div className="bg-footer-bg pt-20">
-      <div className="container mx-auto text-white">
+    <div className="bg-footer-bg lg:pt-10 pt-6">
+      <div className="container mx-auto text-white lg:px-0 px-6">
         {/* First left Part */}
-        <div className="flex items-end 2xl:gap-56 pb-16">
-          <div className="flex flex-col gap-7 w-1/2 items-start">
+        <div className="flex lg:flex-row flex-col items-end 2xl:gap-56 pb-16">
+          <div className="flex flex-col lg:gap-7 gap-5 lg:w-1/2 w-full lg:items-start">
             <Highlight text={"apply now"} icon={applyIcon} />
-            <p className="text-[50px] font-black">
+            <p className="lg:text-[50px] text-4xl font-black">
               Apply today unlock financial freedom with us
             </p>
-            <p className="text-xl leading-[34px] text-semi-transparent-white">
+            <p className="lg:text-xl text-[19px] leading-[34px] text-semi-transparent-white">
               Take the first step towards financial freedom. Apply now for{" "}
               <span className="font-bold text-white">MONZO </span>
               credit card benefits.
             </p>
           </div>
           {/* First Right Part */}
-          <div className="flex flex-col gap-4 w-1/2">
+          <div className="flex flex-col gap-4 lg:w-1/2 w-full">
             <div>
-              <p className="text-white font-medium">Stay up to date</p>
+              <p className="text-white lg:font-medium lg:capitalize uppercase pt-6 font-bold">
+                Stay up to date
+              </p>
             </div>
-            <div className="flex gap-4">
+            <div className="flex lg:flex-row flex-col gap-4">
               <input
                 type="email"
                 placeholder="Enter your email"
@@ -46,11 +48,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <footer className="bg-[#09090A] text-gray-800 pt-28">
+        <footer className="bg-[#09090A] text-gray-800 lg:pt-28 pt-5">
           <div className="grid grid-cols-1 md:grid-cols-6 gap-10">
             <aside className="space-y-4 md:col-span-2">
               <img src={logo} alt="" />
-              <p className="text-xl font-normal leading-[34px] text-semi-transparent-white">
+              <p className="lg:text-xl text-[19px] font-normal leading-[34px] text-semi-transparent-white">
                 Take the first step towards financial freedom with{" "}
                 <span className="font-bold text-white">MONZO</span> credit
                 cards. Apply today to unlock .
@@ -125,8 +127,8 @@ const Footer = () => {
               </Link>
             </nav>
           </div>
-          <div className="flex justify-between items-center py-8 pt-24">
-            <span className="text-lg text-semi-transparent-white">
+          <div className="flex lg:flex-row flex-col-reverse gap-4 justify-between items-center py-8 lg:pt-24 pt-10">
+            <span className="lg:text-lg text-sm text-semi-transparent-white">
               @Copyright 2024 Echosepectra. All Rights Reserved.
             </span>
             <div className="flex gap-4">
