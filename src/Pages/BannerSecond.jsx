@@ -32,9 +32,7 @@ const BannerSecond = () => {
             </div>
           </div>
           <div>
-            <span className="font-extrabold text-[40px] lg:text-[50px]">
-              80K
-            </span>
+            <span className="font-extrabold text-4xl lg:text-[50px]">80K</span>
           </div>
         </div>
         <div>
@@ -51,7 +49,7 @@ const BannerSecond = () => {
             src={greenStar}
             alt=""
           />
-          <span className="font-extrabold text-[40px] lg:text-[50px]">5.8</span>
+          <span className="font-extrabold text-4xl lg:text-[50px]">5.8</span>
         </div>
         <div>
           <p className="lg:text-xl text-[19px] font-manrope text-semi-transparent-white leading-[34px]">
@@ -63,10 +61,10 @@ const BannerSecond = () => {
       {/* third */}
       <div className="lg:py-[60px] py-3">
         <div className="flex lg:gap-3 gap-4 items-center pb-1">
-          <span className="font-medium lg:text-[50px] text-[40px]">
+          <span className="font-medium lg:text-[50px] text-4xl">
             Active User
           </span>
-          <span className="lg:text-[50px] text-[40px] font-black">65k</span>
+          <span className="lg:text-[50px] text-4xl font-black">65k</span>
         </div>
         <div>
           <p className="lg:text-xl text-[19px] font-manrope text-semi-transparent-white leading-[34px]">

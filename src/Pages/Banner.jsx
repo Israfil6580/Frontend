@@ -31,7 +31,7 @@ const Banner = () => {
       {/* Main Content */}
       <div className="relative z-10 flex flex-col items-center text-center container mx-auto lg:pt-[100px] pt-14">
         <Highlight text={"Freedom Unlocked Daily"} icon={star} />
-        <h1 className="lg:w-[1022px] text-white text-center text-5xl lg:text-[80px] font-black lg:leading-[104px] leading-[58px] pt-7 lg:px-0 px-6">
+        <h1 className="lg:w-[1022px] text-white text-center text-[40px] lg:text-[80px] font-black lg:leading-[104px] leading-[58px] pt-7 lg:px-0 px-6">
           Unlock Financial Freedom with Premium Card
         </h1>
         <p className="lg:w-[758px] text-semi-transparent-white font-manrope lg:text-[22px] text-[19px] font-normal leading-[37.4px] pt-8 lg:px-0 px-6">
