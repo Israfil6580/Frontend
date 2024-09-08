@@ -52,7 +52,7 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-6 gap-10">
             <aside className="space-y-4 md:col-span-2">
               <img src={logo} alt="" />
-              <p className="lg:text-xl text-[19px] font-normal leading-[34px] text-semi-transparent-white">
+              <p className="lg:text-xl text-lg font-normal leading-[34px] text-semi-transparent-white">
                 Take the first step towards financial freedom with{" "}
                 <span className="font-bold text-white">MONZO</span> credit
                 cards. Apply today to unlock .
