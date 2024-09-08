@@ -8,17 +8,17 @@ import account from "../assets/account.png";
 import card2 from "../assets/card2.png";
 const HowItsWork = () => {
   return (
-    <div className="container mx-auto pt-40 text-white overflow-hidden">
+    <div className="container mx-auto lg:pt-40 pt-20 text-white overflow-hidden lg:px-0 px-6">
       {/* first step */}
-      <div className="flex items-center">
-        <div className="flex flex-col w-1/2 gap-[21px] items-start">
+      <div className="flex lg:flex-row flex-col items-center">
+        <div className="flex flex-col lg:w-1/2 w-full gap-[21px] lg:items-start items-center">
           <Highlight text={"Freedom Unlocked Daily"} icon={star} />
-          <h1 className="text-6xl font-black leading-[78px]">
+          <h1 className="lg:text-6xl text-5xl font-black lg:leading-[78px]">
             Simplify Your Finances with Our Credit Card.
           </h1>
         </div>
-        <div className="flex flex-col w-1/2 gap-6 items-start pl-52">
-          <p className="text-[22px] text-semi-transparent-white font-normal font-manrope">
+        <div className="flex flex-col lg:w-1/2 w-full gap-6 items-start lg:pl-52 pt-5 lg:pt-0">
+          <p className="lg:text-[22px] text-[19px] text-semi-transparent-white font-normal font-manrope">
             <span className="text-white font-bold">Our credit card</span> app
             streamlines financial management with intuitive features. Start by
             applying directly through our app,
@@ -27,8 +27,8 @@ const HowItsWork = () => {
         </div>
       </div>
       {/* second step */}
-      <div className="flex gap-6 pt-[120px]">
-        <div className="flex flex-col gap-4 w-5/12">
+      <div className="flex lg:flex-row flex-col lg:gap-6 gap-10 lg:pt-[120px] pt-20">
+        <div className="flex flex-col gap-4 lg:w-5/12 w-full">
           <p className="font-bold text-2xl leading-[33.6px]">
             Apply for Your Credit Card
           </p>
@@ -37,12 +37,12 @@ const HowItsWork = () => {
             app and complete the secure{" "}
           </p>
           <img
-            className="object-cover relative lg:left-28 lg:w-[310px] h-auto pt-12"
+            className="object-cover relative lg:left-28 lg:w-[310px] h-auto lg:pt-12 pt-0"
             src={cartoonItem}
             alt=""
           />
         </div>
-        <div className="flex flex-col gap-4 w-7/12">
+        <div className="flex flex-col gap-4 lg:w-7/12 w-full">
           <p className="font-bold text-2xl leading-[33.6px]">
             Instant Approval Process
           </p>
@@ -51,16 +51,16 @@ const HowItsWork = () => {
             reach our customer service team
           </p>
           <img
-            className="object-cover relative lg:left-20 lg:w-[662px] h-auto pt-16"
+            className="object-cover relative lg:left-20 lg:w-[662px] h-auto pt-0 lg:pt-16"
             src={card2}
             alt=""
           />
         </div>
       </div>
       {/* third step */}
-      <div className="flex gap-40 lg:pt-[131px]">
+      <div className="flex lg:flex-row flex-col pt-20 lg:gap-40 gap-10 lg:pt-[131px]">
         <div className="flex flex-col gap-4">
-          <p className="text-[22px] font-bold leading-[33.6px]">
+          <p className="lg:text-[22px] text-2xl font-bold leading-[33.6px]">
             Hassle-Free Application
           </p>
           <p className="leading-[27.2px] text-semi-transparent-white lg:w-[465px]">
@@ -70,7 +70,7 @@ const HowItsWork = () => {
           <img className="object-cover" src={account} alt="" />
         </div>
         <div className="flex flex-col gap-4">
-          <p className="text-[22px] font-bold leading-[33.6px]">
+          <p className="lg:text-[22px] text-2xl font-bold leading-[33.6px]">
             Apply in Minutes
           </p>
           <p className="leading-[27.2px] text-semi-transparent-white lg:w-[465px]">

@@ -4,10 +4,10 @@ import person3 from "../assets/person3.png";
 import greenStar from "../assets/greenStar.png";
 const BannerSecond = () => {
   return (
-    <div className="container mx-auto text-white flex items-center gap-28 py-[89px]">
+    <div className="container mx-auto text-white flex lg:flex-row flex-col items-center lg:gap-28 gap-10 lg:pt-10 pt-20 px-6">
       {/* first */}
-      <div className="flex flex-col gap-3">
-        <div className="flex gap-4 items-center">
+      <div className="flex flex-col gap-3 lg:border-none lg:py-[60px] py-3">
+        <div className="flex gap-4 items-center pb-1">
           <div className="flex -space-x-4 rtl:space-x-reverse">
             <div className="relative">
               <img
@@ -32,35 +32,44 @@ const BannerSecond = () => {
             </div>
           </div>
           <div>
-            <span className="font-extrabold text-[50px]">80K</span>
+            <span className="font-extrabold text-[40px] lg:text-[50px]">
+              80K
+            </span>
           </div>
         </div>
         <div>
-          <p className="text-xl font-manrope text-semi-transparent-white leading-[34px]">
+          <p className="lg:text-xl text-[19px] font-manrope text-semi-transparent-white leading-[34px]">
             Users are the backbone of any application and their needs is crucial{" "}
           </p>
         </div>
       </div>
       {/* second */}
-      <div>
-        <div className="flex gap-3 items-center">
-          <img className="object-cover" src={greenStar} alt="" />
-          <span className="font-extrabold text-[50px]">5.8</span>
+      <div className="lg:py-[60px] py-3">
+        <div className="flex gap-3 items-center pb-1">
+          <img
+            className="object-cover lg:h-auto lg:w-auto h-8 w-8"
+            src={greenStar}
+            alt=""
+          />
+          <span className="font-extrabold text-[40px] lg:text-[50px]">5.8</span>
         </div>
         <div>
-          <p className="text-xl font-manrope text-semi-transparent-white leading-[34px]">
+          <p className="lg:text-xl text-[19px] font-manrope text-semi-transparent-white leading-[34px]">
             Positive ratings by Pulse user around the wortd! Check the review
             here!
           </p>
         </div>
       </div>
-      <div>
-        <div className="flex gap-3 items-center">
-          <span className="font-medium text-[50px]">Active User</span>
-          <span className="text-[50px] font-black">65k</span>
+      {/* third */}
+      <div className="lg:py-[60px] py-3">
+        <div className="flex lg:gap-3 gap-4 items-center pb-1">
+          <span className="font-medium lg:text-[50px] text-[40px]">
+            Active User
+          </span>
+          <span className="lg:text-[50px] text-[40px] font-black">65k</span>
         </div>
         <div>
-          <p className="text-xl font-manrope text-semi-transparent-white leading-[34px]">
+          <p className="lg:text-xl text-[19px] font-manrope text-semi-transparent-white leading-[34px]">
             Active users are essential for the vitality and success of any
             application.
           </p>

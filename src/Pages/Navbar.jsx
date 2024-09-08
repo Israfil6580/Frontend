@@ -10,11 +10,11 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="container mx-auto flex items-center justify-between py-5">
+      <div className="container mx-auto flex items-center justify-between py-5 px-6">
         {/* Brand */}
         <div className="flex gap-[100px] items-center">
           <NavLink to="/" className="text-xl font-semibold text-gray-800">
-            <img src={logo} alt="Logo" />
+            <img className="w-52" src={logo} alt="Logo" />
           </NavLink>
 
           {/* Desktop Menu */}
@@ -48,16 +48,34 @@ const Navbar = () => {
 
         {/* Mobile Menu Items */}
         <div
-          className={`lg:hidden fixed top-16 left-0 w-full bg-gray-100 border border-gray-200 shadow-lg transition-transform transform ${
+          className={`lg:hidden absolute top-16 left-0 w-full bg-black z-50 shadow-lg transition-transform transform ${
             isOpen ? "translate-x-0" : "-translate-x-full"
           } duration-300 ease-in-out`}
         >
-          <div className="flex flex-col p-4">
-            <NavLink to="/" className="block px-4 py-2 hover:bg-gray-200">
-              Item 1
+          <div className="flex flex-col p-6 space-y-8">
+            <NavLink
+              to="/"
+              className="text-semi-transparent-white font-red-hat text-lg font-normal leading-[28.8px]"
+            >
+              Home
             </NavLink>
-            <NavLink to="/" className="block px-4 py-2 hover:bg-gray-200">
-              Item 3
+            <NavLink
+              to="/"
+              className="text-semi-transparent-white font-red-hat text-lg font-normal leading-[28.8px]"
+            >
+              Features
+            </NavLink>
+            <NavLink
+              to="/"
+              className="text-semi-transparent-white font-red-hat text-lg font-normal leading-[28.8px]"
+            >
+              How It Works
+            </NavLink>
+            <NavLink
+              to="/"
+              className="text-semi-transparent-white font-red-hat text-lg font-normal leading-[28.8px]"
+            >
+              FAQs
             </NavLink>
           </div>
         </div>
@@ -66,11 +84,11 @@ const Navbar = () => {
         <div className="lg:hidden relative">
           <button
             onClick={toggleMenu}
-            className="p-2 rounded-md text-gray-700 hover:bg-gray-200 focus:outline-none transition-transform duration-300 ease-in-out"
+            className="p-2 rounded-lg text-white border border-semi-transparent-white focus:outline-none transition-transform duration-300 ease-in-out"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className={`h-6 w-6 transition-transform duration-300 ease-in-out ${
+              className={`h-7 w-7 transition-transform duration-300 ease-in-out ${
                 isOpen ? "rotate-90" : "rotate-0"
               }`}
               fill="none"

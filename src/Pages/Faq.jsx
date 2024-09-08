@@ -8,22 +8,22 @@ const Faq = () => {
     setActiveIndex(activeIndex === index ? -1 : index);
   };
   return (
-    <div className="container mx-auto text-white pb-48">
-      <div className="flex flex-col gap-6 items-center">
+    <div className="container mx-auto text-white lg:pb-48 pb-20 pt-20 lg:px-0 px-6">
+      <div className="flex flex-col lg:gap-6 gap-4 items-center">
         <Highlight text={"Quick Answers"} icon={quickAnswerIcon} />
-        <h1 className="text-[60px] font-black leading-[78px]">
+        <h1 className="lg:text-[60px] text-4xl font-black lg:leading-[78px] text-center">
           Frequently Asked Questions{" "}
         </h1>
-        <p className="text-semi-transparent-white text-[22px] leading-[40.8px] lg:w-[876px] text-center font-manrope px-6">
+        <p className="text-semi-transparent-white lg:text-[22px] text-base lg:leading-[40.8px] lg:w-[876px] text-center font-manrope">
           Explore essential answers to common inquiries about our credit card
           services and manage your financial journey with confidence.
         </p>
       </div>
-      <div className="w-full flex flex-col pt-20">
+      <div className="w-full flex flex-col pt-10">
         {/* Accordion Item 1 */}
         <div>
           <div
-            className="cursor-pointer px-9 py-6 text-[22px] font-medium flex justify-between items-center"
+            className="cursor-pointer px-0 lg:px-9 lg:py-6 py-4 lg:text-[22px] text-xl font-medium flex justify-between items-center"
             onClick={() => toggleAccordion(0)}
           >
             How do I apply for a credit card with MONJO
@@ -36,14 +36,14 @@ const Faq = () => {
             </span>
           </div>
           <div
-            className={`overflow-hidden transition-all duration-300 ${
+            className={`transition-all duration-500 ${
               activeIndex === 0
-                ? "max-h-[100px] opacity-100"
+                ? "max-h-[450px] opacity-100"
                 : "max-h-0 opacity-0"
             }`}
           >
-            <div className="p-4">
-              <p className="text-lg text-semi-transparent-white px-6">
+            <div>
+              <p className="text-lg text-semi-transparent-white px-0 lg:px-6">
                 Applying for a credit card is easy! Simply visit our website and
                 follow the online application process. You can also visit one of
                 our branches for in-person assistance.
@@ -54,7 +54,7 @@ const Faq = () => {
         {/* Accordion Item 2 */}
         <div className="mt-2">
           <div
-            className="cursor-pointer px-9 py-6 text-[22px] font-medium flex justify-between items-center"
+            className="cursor-pointer px-0 lg:px-9 lg:py-6 py-4 lg:text-[22px] text-xl font-medium flex justify-between items-center"
             onClick={() => toggleAccordion(1)}
           >
             How do I apply for a credit card with MONJO
@@ -67,14 +67,14 @@ const Faq = () => {
             </span>
           </div>
           <div
-            className={`overflow-hidden transition-all duration-300 ${
+            className={`transition-all duration-500 ${
               activeIndex === 1
-                ? "max-h-[100px] opacity-100"
+                ? "max-h-[450px] opacity-100"
                 : "max-h-0 opacity-0"
             }`}
           >
             <div className="p-4">
-              <p className="text-lg text-semi-transparent-white px-6">
+              <p className="text-lg text-semi-transparent-white px-0 lg:px-6">
                 Applying for a credit card is easy! Simply visit our website and
                 follow the online application process. You can also visit one of
                 our branches for in-person assistance.
@@ -85,7 +85,7 @@ const Faq = () => {
         {/* Accordion Item 3 */}
         <div className="mt-2">
           <div
-            className="cursor-pointer px-9 py-6 text-[22px] font-medium flex justify-between items-center"
+            className="cursor-pointer px-0 lg:px-9 lg:py-6 py-4 lg:text-[22px] text-xl font-medium flex justify-between items-center"
             onClick={() => toggleAccordion(2)}
           >
             What credit cards do you offer
@@ -98,14 +98,14 @@ const Faq = () => {
             </span>
           </div>
           <div
-            className={`overflow-hidden transition-all duration-300 ${
+            className={`transition-all duration-500 ${
               activeIndex === 2
-                ? "max-h-[100px] opacity-100"
+                ? "max-h-[450px] opacity-100"
                 : "max-h-0 opacity-0"
             }`}
           >
             <div className="p-4">
-              <p className="text-lg text-semi-transparent-white px-6">
+              <p className="text-lg text-semi-transparent-white px-0 lg:px-6">
                 At Monzo, we offer a range of credit cards tailored to suit
                 different needs. Whether you&apos;re looking for a card with
                 rewards, low-interest rates, or one that helps you build your
@@ -121,7 +121,7 @@ const Faq = () => {
         {/* Accordion Item 4 */}
         <div className="mt-2">
           <div
-            className="cursor-pointer px-9 py-6 text-[22px] font-medium flex justify-between items-center"
+            className="cursor-pointer px-0 lg:px-9 lg:py-6 py-4 lg:text-[22px] text-xl font-medium flex justify-between items-center"
             onClick={() => toggleAccordion(3)}
           >
             How can I check my credit card application status
@@ -134,14 +134,14 @@ const Faq = () => {
             </span>
           </div>
           <div
-            className={`overflow-hidden transition-all duration-300 ${
+            className={`transition-all duration-500 ${
               activeIndex === 3
-                ? "max-h-[100px] opacity-100"
+                ? "max-h-[450px] opacity-100"
                 : "max-h-0 opacity-0"
             }`}
           >
             <div className="p-4">
-              <p className="text-lg text-semi-transparent-white px-6">
+              <p className="text-lg text-semi-transparent-white px-0 lg:px-6">
                 You can check your credit card application status by calling the
                 customer service number for the issuer. Most credit card issuers
                 also let you check your application status online. (In some
@@ -153,7 +153,7 @@ const Faq = () => {
         {/* Accordion Item 5 */}
         <div className="mt-2">
           <div
-            className="cursor-pointer py-6 px-9 text-[22px] font-medium flex justify-between items-center bg-[#231DDF] rounded-2xl"
+            className="cursor-pointer lg:py-6 py-4 px-3 lg:px-9 lg:text-[22px] text-xl font-medium flex justify-between items-center bg-[#231DDF] rounded-2xl"
             onClick={() => toggleAccordion(4)}
           >
             What should I do if my credit card is lost or stolen
@@ -166,14 +166,14 @@ const Faq = () => {
             </span>
           </div>
           <div
-            className={`overflow-hidden transition-all duration-300 ${
+            className={`transition-all duration-500 ${
               activeIndex === 4
-                ? "max-h-[100px] opacity-100"
+                ? "max-h-[450px] opacity-100"
                 : "max-h-0 opacity-0"
             }`}
           >
             <div className="p-4">
-              <p className="text-lg text-semi-transparent-white px-6">
+              <p className="text-lg text-semi-transparent-white px-0 lg:px-6">
                 Once you realise that your credit card is stolen or misused, you
                 must immediately call your bank and inform them about the loss
                 of your credit card. The bank will then block your card which
