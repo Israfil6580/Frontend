@@ -1,16 +1,38 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.svg";
+
 const Navbar = () => {
+  const [isSticky, setIsSticky] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  const handleScroll = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const handleSticky = () => {
+    if (window.scrollY > 250) {
+      setIsSticky(true);
+    } else {
+      setIsSticky(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleSticky);
+    return () => {
+      window.removeEventListener("scroll", handleSticky);
+    };
+  }, []);
 
   return (
-    <div>
-      <div className="container mx-auto flex items-center justify-between py-5 px-6">
+    <div className={`bg-black ${isSticky ? "sticky" : ""}`}>
+      <div className="container mx-auto flex items-center justify-between py-3 px-6">
         {/* Brand */}
         <div className="flex gap-[100px] items-center">
           <NavLink to="/" className="text-xl font-semibold text-gray-800">
@@ -20,26 +42,26 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <div className="hidden lg:flex lg:items-center lg:space-x-8">
             <NavLink
-              to="/"
               className="text-semi-transparent-white font-red-hat text-lg font-normal leading-[28.8px]"
+              onClick={() => handleScroll("banner")}
             >
               Home
             </NavLink>
             <NavLink
-              to="/"
               className="text-semi-transparent-white font-red-hat text-lg font-normal leading-[28.8px]"
+              onClick={() => handleScroll("features")}
             >
               Features
             </NavLink>
             <NavLink
-              to="/"
               className="text-semi-transparent-white font-red-hat text-lg font-normal leading-[28.8px]"
+              onClick={() => handleScroll("how-its-work")}
             >
               How It Works
             </NavLink>
             <NavLink
-              to="/"
               className="text-semi-transparent-white font-red-hat text-lg font-normal leading-[28.8px]"
+              onClick={() => handleScroll("faqs")}
             >
               FAQs
             </NavLink>
@@ -54,25 +76,25 @@ const Navbar = () => {
         >
           <div className="flex flex-col p-6 space-y-8">
             <NavLink
-              to="/"
+              onClick={() => handleScroll("banner")}
               className="text-semi-transparent-white font-red-hat text-lg font-normal leading-[28.8px]"
             >
               Home
             </NavLink>
             <NavLink
-              to="/"
+              onClick={() => handleScroll("features")}
               className="text-semi-transparent-white font-red-hat text-lg font-normal leading-[28.8px]"
             >
               Features
             </NavLink>
             <NavLink
-              to="/"
+              onClick={() => handleScroll("how-its-work")}
               className="text-semi-transparent-white font-red-hat text-lg font-normal leading-[28.8px]"
             >
               How It Works
             </NavLink>
             <NavLink
-              to="/"
+              onClick={() => handleScroll("faqs")}
               className="text-semi-transparent-white font-red-hat text-lg font-normal leading-[28.8px]"
             >
               FAQs

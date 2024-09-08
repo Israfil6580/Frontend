@@ -8,13 +8,13 @@ const Faq = () => {
     setActiveIndex(activeIndex === index ? -1 : index);
   };
   return (
-    <div className="container mx-auto text-white lg:pb-48 pb-20 pt-20 lg:px-0 px-6">
+    <div className="container mx-auto text-white lg:pb-32 pb-20 pt-20 lg:px-0 px-6">
       <div className="flex flex-col lg:gap-6 gap-4 items-center">
         <Highlight text={"Quick Answers"} icon={quickAnswerIcon} />
-        <h1 className="lg:text-[60px] text-4xl font-black lg:leading-[78px] text-center">
+        <h1 className="xl:text-6xl lg:text-5xl text-4xl font-black xl:leading-[78px]">
           Frequently Asked Questions{" "}
         </h1>
-        <p className="text-semi-transparent-white lg:text-[22px] text-base lg:leading-[40.8px] lg:w-[876px] text-center font-manrope">
+        <p className="text-semi-transparent-white lg:text-[22px] text-[19px] xl:leading-[40.8px] lg:w-[876px] font-manrope lg:text-center text-left">
           Explore essential answers to common inquiries about our credit card
           services and manage your financial journey with confidence.
         </p>
@@ -42,7 +42,7 @@ const Faq = () => {
                 : "max-h-0 opacity-0"
             }`}
           >
-            <div>
+            <div className="p-4">
               <p className="text-lg text-semi-transparent-white px-0 lg:px-6">
                 Applying for a credit card is easy! Simply visit our website and
                 follow the online application process. You can also visit one of

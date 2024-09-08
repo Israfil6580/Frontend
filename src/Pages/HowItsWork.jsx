@@ -8,17 +8,17 @@ import account from "../assets/account.png";
 import card2 from "../assets/card2.png";
 const HowItsWork = () => {
   return (
-    <div className="container mx-auto lg:pt-40 pt-20 text-white overflow-hidden lg:px-0 px-6">
+    <div className="container mx-auto lg:pt-40 pt-20 text-white overflow-hidden xl:px-0 px-6">
       {/* first step */}
       <div className="flex lg:flex-row flex-col items-center">
         <div className="flex flex-col lg:w-1/2 w-full gap-[21px] lg:items-start items-center">
           <Highlight text={"Freedom Unlocked Daily"} icon={star} />
-          <h1 className="lg:text-6xl text-5xl font-black lg:leading-[78px]">
+          <h1 className="xl:text-6xl text-5xl font-black xl:leading-[78px]">
             Simplify Your Finances with Our Credit Card.
           </h1>
         </div>
-        <div className="flex flex-col lg:w-1/2 w-full gap-6 items-start lg:pl-52 pt-5 lg:pt-0">
-          <p className="lg:text-[22px] text-[19px] text-semi-transparent-white font-normal font-manrope">
+        <div className="flex flex-col lg:w-1/2 w-full gap-6 items-start xl:pl-52 pt-5 xl:pt-0">
+          <p className="xl:text-[22px] lg:text-xl text-[19px] text-semi-transparent-white font-normal font-manrope">
             <span className="text-white font-bold">Our credit card</span> app
             streamlines financial management with intuitive features. Start by
             applying directly through our app,
@@ -37,7 +37,7 @@ const HowItsWork = () => {
             app and complete the secure{" "}
           </p>
           <img
-            className="object-cover relative lg:left-28 lg:w-[310px] h-auto lg:pt-12 pt-0"
+            className="object-cover relative lg:left-28 2xl:w-[310px] xl:w-[280px] lg:w-[250px] md:w-[350px] h-auto lg:pt-12 pt-0"
             src={cartoonItem}
             alt=""
           />
@@ -51,14 +51,14 @@ const HowItsWork = () => {
             reach our customer service team
           </p>
           <img
-            className="object-cover relative lg:left-20 lg:w-[662px] h-auto pt-0 lg:pt-16"
+            className="object-cover relative lg:left-20 2xl:w-[662px] xl:w-[500px] lg:w-[440px] h-auto pt-0 lg:pt-16"
             src={card2}
             alt=""
           />
         </div>
       </div>
       {/* third step */}
-      <div className="flex lg:flex-row flex-col pt-20 lg:gap-40 gap-10 lg:pt-[131px]">
+      <div className="flex lg:flex-row flex-col pt-20 xl:gap-40 lg:gap-20 gap-10 lg:pt-[131px]">
         <div className="flex flex-col gap-4">
           <p className="lg:text-[22px] text-2xl font-bold leading-[33.6px]">
             Hassle-Free Application
@@ -77,7 +77,11 @@ const HowItsWork = () => {
             Managing your credit card account is simple with our online account
             management tools. You can view transactions
           </p>
-          <img className="object-cover" src={cartoonItem2} alt="" />
+          <img
+            className="object-cover h-auto xl:w-[332px] lg:w-[290px] w-[400px]"
+            src={cartoonItem2}
+            alt=""
+          />
         </div>
       </div>
     </div>

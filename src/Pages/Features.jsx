@@ -6,9 +6,9 @@ import featureIcon4 from "../assets/f-icon4.svg";
 
 const Features = () => {
   return (
-    <div className="container mx-auto text-white lg:pt-36 pt-20 lg:px-0 px-6">
+    <div className="container mx-auto text-white xl:pt-36 lg:pt-10 pt-20 xl:px-0 px-6">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 grid-rows-6 lg:gap-12">
-        <div className="col-span-1 md:col-span-2 lg:col-span-2 row-span-6 flex flex-col lg:gap-[130px] gap-10 self-center">
+        <div className="col-span-1 md:col-span-2 lg:col-span-2 row-span-6 flex flex-col xl:gap-[130px] gap-10 self-center">
           {/* first feature */}
           <div className="flex gap-[15px] flex-col border border-semi-transparent-white p-4 rounded-2xl">
             <img
@@ -47,7 +47,7 @@ const Features = () => {
             alt="Features"
           />
         </div>
-        <div className="col-span-1 md:col-span-2 lg:col-span-2 row-span-6 flex flex-col lg:gap-[130px] gap-10 self-center">
+        <div className="col-span-1 md:col-span-2 lg:col-span-2 row-span-6 flex flex-col xl:gap-[130px] gap-10 self-center">
           {/* third feature */}
           <div className="flex gap-[15px] flex-col border border-semi-transparent-white p-4 rounded-2xl">
             <img

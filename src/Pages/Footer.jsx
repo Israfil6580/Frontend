@@ -11,12 +11,12 @@ import discord from "../assets/icon/discord.png";
 const Footer = () => {
   return (
     <div className="bg-footer-bg lg:pt-10 pt-6">
-      <div className="container mx-auto text-white lg:px-0 px-6">
+      <div className="container mx-auto text-white xl:px-0 px-6">
         {/* First left Part */}
-        <div className="flex lg:flex-row flex-col items-end 2xl:gap-56 pb-16">
+        <div className="flex lg:flex-row flex-col items-end xl:gap-52 gap-10 pb-16">
           <div className="flex flex-col lg:gap-7 gap-5 lg:w-1/2 w-full lg:items-start">
             <Highlight text={"apply now"} icon={applyIcon} />
-            <p className="lg:text-[50px] text-4xl font-black">
+            <p className="lg:text-5xl capitalize text-4xl font-black pt-5 xl:leading-normal">
               Apply today unlock financial freedom with us
             </p>
             <p className="lg:text-xl text-[19px] leading-[34px] text-semi-transparent-white">
@@ -34,13 +34,18 @@ const Footer = () => {
             </div>
             <div className="flex lg:flex-row flex-col gap-4">
               <input
+                id="email"
                 type="email"
                 placeholder="Enter your email"
                 className="w-full py-[18px] px-6 rounded-custom outline-none text-white bg-white/5 border border-white/10"
               />
               <DefaultButton text={"Subscribe"} icon={rightArrow} />
             </div>
-            <div>
+            <div className="flex gap-2 lg:items-center items-start">
+              <input
+                type="checkbox"
+                className="w-5 h-5 text-blue-600 mt-[2px]"
+              />
               <p className="text-semi-transparent-white">
                 By clicking the button you agree to our{" "}
                 <Link className="text-white underline">Privacy Policy</Link>{" "}
@@ -49,7 +54,7 @@ const Footer = () => {
           </div>
         </div>
         <footer className="bg-[#09090A] text-gray-800 lg:pt-28 pt-5">
-          <div className="grid grid-cols-1 md:grid-cols-6 gap-10">
+          <div className="grid grid-cols-1 lg:grid-cols-6 md:grid-cols-3  gap-10">
             <aside className="space-y-4 md:col-span-2">
               <img src={logo} alt="" />
               <p className="lg:text-xl text-lg font-normal leading-[34px] text-semi-transparent-white">

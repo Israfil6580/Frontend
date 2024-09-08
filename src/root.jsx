@@ -1,5 +1,5 @@
+// Root.js
 import Banner from "./Pages/Banner";
-import BannerSecond from "./Pages/BannerSecond";
 import Faq from "./Pages/Faq";
 import Features from "./Pages/Features";
 import Footer from "./Pages/Footer";
@@ -10,11 +10,18 @@ const Root = () => {
   return (
     <div className="bg-black">
       <Navbar />
-      <Banner />
-      <BannerSecond />
-      <Features />
-      <HowItsWork />
-      <Faq />
+      <div id="banner">
+        <Banner />
+      </div>
+      <div id="features">
+        <Features />
+      </div>
+      <div id="how-its-work">
+        <HowItsWork />
+      </div>
+      <div id="faqs">
+        <Faq />
+      </div>
       <Footer />
     </div>
   );
