@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.svg";
-
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +30,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={`bg-black ${isSticky ? "sticky" : ""}`}>
+    <div className={`${isSticky ? "bg-black fixed top-0 w-full z-50" : ""}`}>
       <div className="container mx-auto flex items-center justify-between py-3 px-6">
         {/* Brand */}
         <div className="flex gap-[100px] items-center">

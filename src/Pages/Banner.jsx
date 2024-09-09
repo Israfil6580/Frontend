@@ -23,8 +23,8 @@ const Banner = () => {
         <div className="absolute inset-0 z-0 flex justify-between items-center">
           <div>
             <div className="flex">
-              <div className="absolute top-56 left-40 w-custom h-custom flex-shrink-0 rounded-customGradient opacity-50 bg-custom-blue blur-custom"></div>
-              <div className=" absolute top-20 right-80 w-custom h-custom flex-shrink-0 rounded-customGradient opacity-80 bg-custome-deep-blue blur-custom"></div>
+              <div className="absolute top-64 left-40 w-custom h-custom flex-shrink-0 rounded-customGradient opacity-50 bg-custom-blue blur-custom"></div>
+              <div className=" absolute top-48 right-80 w-custom h-custom flex-shrink-0 rounded-customGradient opacity-80 bg-custome-deep-blue blur-custom"></div>
             </div>
             <div>
               <div className="absolute bottom-20 right-[40rem] w-smallGradient h-smallGradient flex-shrink-0 rounded-smallGradient opacity-70 bg-[#0FC9F8] blur-custom"></div>
@@ -109,7 +109,7 @@ const Banner = () => {
       <div className="container mx-auto text-white flex lg:flex-row flex-col items-center lg:10 xl:gap-28 gap-10 lg:pt-10 pt-20 px-6">
         {/* first */}
         <div className="flex flex-col gap-3 lg:border-none lg:py-[60px] py-3">
-          <div className="flex gap-4 items-center pb-1">
+          <div className="flex gap-4 items-center pb-2">
             <div className="flex -space-x-4 rtl:space-x-reverse">
               <div className="relative">
                 <img
@@ -148,7 +148,7 @@ const Banner = () => {
         </div>
         {/* second */}
         <div className="lg:py-[60px] py-3">
-          <div className="flex gap-3 items-center pb-1">
+          <div className="flex gap-3 items-center pb-4">
             <img
               className="object-cover lg:h-auto lg:w-auto h-8 w-8"
               src={greenStar}
@@ -165,10 +165,8 @@ const Banner = () => {
         </div>
         {/* third */}
         <div className="lg:py-[60px] py-3">
-          <div className="flex lg:gap-3 gap-4 items-center pb-1">
-            <span className="font-medium xl:text-[50px] lg:text-4xl text-4xl">
-              Active User
-            </span>
+          <div className="flex lg:gap-3 gap-4 items-center pb-4">
+            <span className="font-medium text-4xl">Active User</span>
             <span className="lg:text-[50px] text-4xl font-black">65k</span>
           </div>
           <div>
