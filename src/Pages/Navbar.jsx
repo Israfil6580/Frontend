@@ -1,36 +1,53 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 import logo from "../assets/logo.svg";
+
 const Navbar = () => {
-  const [isSticky, setIsSticky] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [scrollDirection, setScrollDirection] = useState("up");
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
   const handleScroll = (id) => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
-  const handleSticky = () => {
-    if (window.scrollY > 80) {
-      setIsSticky(true);
-    } else {
-      setIsSticky(false);
-    }
-  };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleSticky);
-    return () => {
-      window.removeEventListener("scroll", handleSticky);
+    const handleScroll = () => {
+      // Detect scroll direction
+      if (window.scrollY > lastScrollY) {
+        setScrollDirection("down");
+      } else {
+        setScrollDirection("up");
+      }
+      setLastScrollY(window.scrollY);
     };
-  }, []);
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
 
   return (
-    <div className={`${isSticky ? "bg-black fixed top-0 w-full z-50" : ""}`}>
+    <motion.div
+      initial={false}
+      animate={{ y: scrollDirection === "down" ? -100 : 0 }}
+      transition={{
+        type: "spring",
+        stiffness: 200,
+        damping: 20,
+        duration: 1000,
+      }}
+      className={"bg-black fixed top-0 w-full z-50"}
+    >
       <div className="container mx-auto flex items-center justify-between py-3 px-6">
         {/* Brand */}
         <div className="flex gap-[100px] items-center">
@@ -67,9 +84,9 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile Menu Items */}
+        {/* Mobile Menu */}
         <div
-          className={`lg:hidden absolute top-16 left-0 w-full bg-black z-50 shadow-lg transition-transform transform ${
+          className={`lg:hidden fixed top-16 left-0 w-full bg-black z-50 shadow-lg transition-transform transform ${
             isOpen ? "translate-x-0" : "-translate-x-full"
           } duration-300 ease-in-out`}
         >
@@ -101,7 +118,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Menu Toggle Button */}
         <div className="lg:hidden relative">
           <button
             onClick={toggleMenu}
@@ -136,7 +153,7 @@ const Navbar = () => {
           </span>
         </NavLink>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
