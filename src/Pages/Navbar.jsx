@@ -44,7 +44,7 @@ const Navbar = () => {
         type: "spring",
         stiffness: 200,
         damping: 20,
-        duration: 1000,
+        duration: 2000,
       }}
       className={"bg-black fixed top-0 w-full z-50"}
     >
