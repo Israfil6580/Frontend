@@ -18,7 +18,7 @@ import greenStar from "../assets/greenStar.png";
 const Banner = () => {
   return (
     <>
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden pt-10">
         {/* Background Blurred Elements */}
         <div className="absolute inset-0 z-0 flex justify-between items-center">
           <div>
